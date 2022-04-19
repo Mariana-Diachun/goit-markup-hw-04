@@ -155,12 +155,6 @@ img {
     color: var(--second-text-color);
 }
 
-
-.header-link-contact:hover, 
-.header-link-contact:focus {
-    color: var(--accent-color);
-}
-
 .header-list-contact {
     display: flex;
     margin-left: auto;
@@ -168,6 +162,22 @@ img {
 
 .header-item-contact:not(:last-child) {
     margin-right: 50px;
+}
+.icon-mail {
+    display: inline-block;
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.icon-phone {
+    display: inline-block;
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.header-link-contact:hover,
+.header-link-contact:focus {
+    color: var(--accent-color);
 }
 
 /* --------------------Мейн контент СТУДИЯ---------------------- */
@@ -179,6 +189,9 @@ img {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)),
+    url(../images/bg.jpg);
 }
 
 
@@ -232,6 +245,8 @@ img {
 .benefits-item {
     width: 270px;
 }
+
+
 .benefits-item:not(:last-child) {
     margin-right: 30px;
 }
