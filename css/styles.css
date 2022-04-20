@@ -6,6 +6,7 @@
     --footer-background: #2F303A;
     --second-text-color: #757575;
     --typical-margin: 30px;
+    --icons-color: #AFB1B8;
 }
 
 
@@ -159,14 +160,19 @@ img {
     display: flex;
     margin-left: auto;
 }
+.header-link-contact {
+    display: flex;
+    text-align: center;
+}
+
 
 .header-item-contact:not(:last-child) {
     margin-right: 50px;
 }
 .icon-mail {
     display: inline-block;
-    fill: currentColor;
     margin-right: 10px;
+    fill: currentColor;
 }
 
 .icon-phone {
@@ -192,6 +198,7 @@ img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
     rgba(47, 48, 58, 0.4)),
     url(../images/bg.jpg);
+    background-repeat:no-repeat;
 }
 
 
@@ -243,8 +250,18 @@ img {
     padding-bottom: 94px;
 }
 .benefits-item {
-    width: 270px;
+    display: block;
 }
+
+.benefits-icon {
+    display: block;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+    padding: 25px 103px;
+}
+
 
 
 .benefits-item:not(:last-child) {
@@ -266,6 +283,7 @@ img {
 }
 
 .benefits-title {
+    margin-top: 30px;
     margin-bottom: 10px;
 
     font-weight: 700;
@@ -287,9 +305,6 @@ img {
 
 /* ----------Чем ми занимаемся--------- */
 
-.activity {
-    padding-bottom: 0;
-}
 
 .activity-title {
     text-align: center;
@@ -315,7 +330,6 @@ img {
 
 
 /* --------Наша команда--------- */
-
 
 
 .team {
@@ -374,7 +388,55 @@ img {
     color: var(--second-text-color);
 }
 
+.social-list {
+    display: flex;
+    justify-content:center;
+}
 
+
+.social-links {
+    fill: var(--icons-color);
+}
+
+
+
+/* -----------Постоянные клиенты------- */
+
+.clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+.clients-list {
+    display: flex;
+}
+
+
+.clients-link {
+    display: block;
+    margin-top: 50px;
+    padding: 16px 32px;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    fill: var(--icons-color);
+}
+
+
+.clients-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients-link:hover, 
+.clients-link:focus {
+    fill: var(--accent-color);
+}
 
 /* -----------ПОРТФОЛИО------------ */
 
@@ -435,6 +497,12 @@ img {
     border-radius: 4px;
 
 }
+.galery-item {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 
 .galery-title {
     margin-bottom: 4px;
