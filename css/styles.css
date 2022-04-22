@@ -571,15 +571,17 @@ img {
 /* -------------------------Футер----------------------- */
 
 .footer {
-    display: flex;
-    /* align-items: baseline; */
     background-color: var(--footer-background);
     padding-top: 60px;
     padding-bottom: 60px;
 }
-
 .footer .container {
-    display: inline-flex;
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-flex {
+    margin-right: 70px;
 }
 
 .footer-logo {
@@ -591,7 +593,6 @@ img {
 }
 
 .footer-logo {
-    display: inline-block;
     margin-bottom: 20px;
 
     font-family: 'Raleway', sans-serif;
@@ -643,6 +644,7 @@ img {
 }
 
 .acept-title {
+    margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
