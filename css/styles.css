@@ -162,6 +162,7 @@ img {
 }
 .header-link-contact {
     display: flex;
+    align-items: center;
     text-align: center;
 }
 
@@ -199,6 +200,7 @@ img {
     rgba(47, 48, 58, 0.4)),
     url(../images/bg.jpg);
     background-repeat:no-repeat;
+    background-position: center;
     background-size: cover;
     max-width: 1600px;
     margin: 0 auto;
@@ -366,7 +368,7 @@ img {
 
 .team-card {
     padding-top: 30px;
-    padding-bottom: 16px;
+    padding-bottom: 30px;
 }
 
 .team-title-second {
@@ -403,6 +405,7 @@ img {
 .social-list {
     display: flex;
     justify-content: center;
+    margin-top: 16px;
 }
 
 .social-item + .social-item {
@@ -413,10 +416,6 @@ img {
 .social-links:focus {
     background-color: var(--accent-color);
     fill: #FFFFFF;
-}
-
-.social-list {
-    padding-bottom: 30px;
 }
 
 /* -----------Постоянные клиенты------- */
@@ -453,7 +452,8 @@ img {
     fill: var(--icons-color);
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
     fill: var(--accent-color);
     border: 1px solid var(--accent-color);
 }
@@ -516,14 +516,18 @@ img {
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-
 }
-.galery-item:hover {
+
+.galery-link {
+    display: block;
+}
+
+.galery-link:hover,
+.galery-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
 
 .galery-title {
     margin-bottom: 4px;
